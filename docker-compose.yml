@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  database:
+    image: mongo:6.0-focal
+    restart: always
+    volumes:
+      - ./testdata/mongo:/data/db:rw
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=123

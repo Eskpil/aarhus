@@ -1,0 +1,17 @@
+#!/bin/sh
+
+export MONGODB_USER=aarhus-core
+export MONGODB_PASSWORD=123
+export MONGODB_HOST=localhost
+export MONGODB_PORT=27017
+export MONGODB_DATABASE=aarhus
+
+export DISCORD_CLIENT_ID=1122155582313476146
+export DISCORD_CLIENT_SECRET=FpyRJ7r4SZ2V0Nm2wjHaKxg6gRLeMCM0
+
+export SESSION_SECRET=23ur5098243ugoi3rjg0i3rew8g098reugpo3i4rohgjrepohgbkreoklbjgu0432ug3o5rjgpl342kglkrewjgølkdsjgsdg978y4329wuygrewjglkjdsjgvkjdshgiu
+export DEVELOPMENT=true
+
+export FRONTEND=http://localhost:5173
+
+go run cmd/core/main.go

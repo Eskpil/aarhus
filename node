@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export LOG_DEVELOP=true
+
+export AARHUS_NODE_DATA=$PWD/node1/
+export CORE=http://localhost:8080
+
+go run cmd/node/main.go
